@@ -1,0 +1,7 @@
+/home/pub/geant4/B4/B4a/bulid/CMakeFiles/exampleB4a.dir
+/home/pub/geant4/B4/B4a/bulid/CMakeFiles/edit_cache.dir
+/home/pub/geant4/B4/B4a/bulid/CMakeFiles/rebuild_cache.dir
+/home/pub/geant4/B4/B4a/bulid/CMakeFiles/list_install_components.dir
+/home/pub/geant4/B4/B4a/bulid/CMakeFiles/install.dir
+/home/pub/geant4/B4/B4a/bulid/CMakeFiles/install/local.dir
+/home/pub/geant4/B4/B4a/bulid/CMakeFiles/install/strip.dir
