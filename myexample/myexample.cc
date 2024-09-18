@@ -18,7 +18,7 @@ using namespace myexample;
 int main(int argc,char** argv)
 {
   G4UIExecutive* ui = nullptr;
-//  if ( argc == 1 ) { ui = new G4UIExecutive(argc, argv); }
+  if ( argc == 1 ) { ui = new G4UIExecutive(argc, argv); }
   G4int precision = 4;
   G4SteppingVerbose::UseBestUnit(precision);
   auto* runManager =  G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
@@ -40,13 +40,13 @@ int main(int argc,char** argv)
   G4UImanager* UImanager = G4UImanager::GetUIpointer();
   if ( ! ui ) {
     // batch mode
-  //  G4String command = "/control/execute ";
-   // G4String fileName = argv[1];
-    UImanager->ApplyCommand("/run/initialize");
-    UImanager->ApplyCommand("/run/beamOn/ 20");
+    G4String command = "/control/execute ";
+    G4String fileName = argv[1];
+    UImanager->ApplyCommand(commad+fileName);
   }
   else {
     // interactive mode
+    
     UImanager->ApplyCommand("/control/execute init_vis.mac");
     ui->SessionStart();
     delete ui;

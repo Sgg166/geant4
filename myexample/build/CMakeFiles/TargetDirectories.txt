@@ -1,7 +1,0 @@
-/home/pub/geant4/myexample/build/CMakeFiles/myexample.dir
-/home/pub/geant4/myexample/build/CMakeFiles/edit_cache.dir
-/home/pub/geant4/myexample/build/CMakeFiles/rebuild_cache.dir
-/home/pub/geant4/myexample/build/CMakeFiles/list_install_components.dir
-/home/pub/geant4/myexample/build/CMakeFiles/install.dir
-/home/pub/geant4/myexample/build/CMakeFiles/install/local.dir
-/home/pub/geant4/myexample/build/CMakeFiles/install/strip.dir
