@@ -43,8 +43,8 @@ target_link_libraries(myexample ${Geant4_LIBRARIES})
 set(MYEXAMPLEB1_SCRIPTS
   myexample.in
 #exampleB1.out
-  init_vis.mac
-  vis.mac
+#init_vis.mac
+#  vis.mac
   )
 
 foreach(_script ${MYEXAMPLEB1_SCRIPTS})

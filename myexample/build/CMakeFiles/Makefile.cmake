@@ -25,9 +25,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.26.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.26.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.5/CMakeSystem.cmake"
-  "/home/pub/geant4/myexample/init_vis.mac"
   "/home/pub/geant4/myexample/myexample.in"
-  "/home/pub/geant4/myexample/vis.mac"
   "/usr/lib64/cmake/Qt5Core/Qt5CoreConfig.cmake"
   "/usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtras.cmake"
   "/usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake"
@@ -118,8 +116,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "myexample.in"
-  "init_vis.mac"
-  "vis.mac"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
