@@ -41,7 +41,7 @@ target_link_libraries(myexample ${Geant4_LIBRARIES})
 # relies on these scripts being in the current working directory.
 #
 set(MYEXAMPLEB1_SCRIPTS
-  myexample.in
+# myexample.in
 #exampleB1.out
 #init_vis.mac
 #  vis.mac
