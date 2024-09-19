@@ -42,12 +42,29 @@ int main(int argc,char** argv)
     // batch mode
     G4String command = "/control/execute ";
     G4String fileName = argv[1];
-    UImanager->ApplyCommand(commad+fileName);
+    UImanager->ApplyCommand(command+fileName);
   }
   else {
     // interactive mode
-    
-    UImanager->ApplyCommand("/control/execute init_vis.mac");
+    UImanager->ApplyCommand("/control/verbose 2");
+//    UImanager->ApplyCommand("/control/saveHistory");
+    UImanager->ApplyCommand("/run/verbose 2");
+    UImanager->ApplyCommand("/run/numberOfThreads 1");
+    UImanager->ApplyCommand("/run/initialize");
+    UImanager->ApplyCommand("/vis/open OGL 600x600-0+0");
+    UImanager->ApplyCommand("/vis/viewer/set/autoRefresh false");
+    UImanager->ApplyCommand("/vis/verbose errors");
+    UImanager->ApplyCommand("/vis/drawVolume");
+    UImanager->ApplyCommand("/vis/viewer/set/viewpointThetaPhi 90. 180.");
+    UImanager->ApplyCommand("/vis/viewer/zoom 1.4");
+    UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
+    UImanager->ApplyCommand("/vis/modeling/trajectories/create/drawByCharge");
+    UImanager->ApplyCommand("/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true");
+    UImanager->ApplyCommand("/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2");
+    UImanager->ApplyCommand("/vis/scene/add/hits");
+    UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
+    UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
+    UImanager->ApplyCommand("/vis/verbose warnings");
     ui->SessionStart();
     delete ui;
   }

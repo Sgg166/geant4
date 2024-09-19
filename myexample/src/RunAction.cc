@@ -42,13 +42,14 @@ void RunAction::EndOfRunAction(const G4Run* run)
   G4double edep4  = fEdep4.GetValue();
   G4double edep5  = fEdep5.GetValue();
   G4double edep6  = fEdep6.GetValue();
-if (IsMaster()) {
-G4cout << "Total energy on Face1: " <<G4BestUnit(edep1,"Energy")  << G4endl;
-G4cout << "Total energy on Face2: " <<G4BestUnit(edep2,"Energy")  << G4endl;
-G4cout << "Total energy on Face3: " <<G4BestUnit(edep3,"Energy")  << G4endl;
-G4cout << "Total energy on Face4: " <<G4BestUnit(edep4,"Energy")  << G4endl;
-G4cout << "Total energy on Face5: " <<G4BestUnit(edep5,"Energy")  << G4endl;
-G4cout << "Total energy on Face6: " <<G4BestUnit(edep6,"Energy")  << G4endl;
+if (IsMaster()) 
+{
+  G4cout << "Total energy on Face1: " <<G4BestUnit(edep1,"Energy")  << G4endl;
+  G4cout << "Total energy on Face2: " <<G4BestUnit(edep2,"Energy")  << G4endl;
+  G4cout << "Total energy on Face3: " <<G4BestUnit(edep3,"Energy")  << G4endl;
+  G4cout << "Total energy on Face4: " <<G4BestUnit(edep4,"Energy")  << G4endl;
+  G4cout << "Total energy on Face5: " <<G4BestUnit(edep5,"Energy")  << G4endl;
+  G4cout << "Total energy on Face6: " <<G4BestUnit(edep6,"Energy")  << G4endl;
 }
 }
 void RunAction::AddEdep1(G4double edep1)

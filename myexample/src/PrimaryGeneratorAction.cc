@@ -34,13 +34,13 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
   const G4Run *nowrun=G4RunManager::GetRunManager()->GetCurrentRun();
-G4int runid=nowrun->GetRunID();
-G4int posx,posy,posz;
-posx=int(floor(runid/64));
-posy=int(floor((runid%64)/8));
-posz=int(floor((runid%64)%8));
-fParticleGun->SetParticlePosition(G4ThreeVector((posx-3.5)*3.2*mm,(posy-3.5)*3.2*mm,(posz-3.5)*3.2*mm));
-G4double rndmCosTheta,rndmTheta,rndmPhi,rndmLambda,px,py,pz,pol_x,pol_y,pol_z;
+  G4int runid=nowrun->GetRunID();
+  G4int posx,posy,posz;
+  posx=int(floor(runid/64));
+  posy=int(floor((runid%64)/8));
+  posz=int(floor((runid%64)%8));
+  fParticleGun->SetParticlePosition(G4ThreeVector((posx-3.5)*3.2*mm,(posy-3.5)*3.2*mm,(posz-3.5)*3.2*mm));
+  G4double rndmCosTheta,rndmTheta,rndmPhi,rndmLambda,px,py,pz,pol_x,pol_y,pol_z;
   rndmCosTheta = G4UniformRand()*2-1;
   rndmTheta = acos(rndmCosTheta);
   rndmTheta = acos(rndmCosTheta);
